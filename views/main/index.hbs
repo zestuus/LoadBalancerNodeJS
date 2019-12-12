@@ -1,0 +1,41 @@
+<p></p>
+{{#if isLoggedIn}}
+	<h1>Hello</h1>
+	<form action="/add-to-queue" method="post">
+		<input type="text" name="input">
+		<button class="btn btn-primary" type="submit">Add to queue</button>
+	</form>
+	<p></p>
+	{{#if history}}
+		{{#each history}}
+			<div class="shadow-sm row" id="{{this._id}}">
+				<div class="col-sm-1">
+					<h3>#{{@index}}</h3>
+				</div>
+				<div class="col-sm-5">
+					<h4>Time: {{this.time}}</h4>
+					<h3>Data: {{this.data}}</h3>
+				</div>
+				<div class="col-sm-4">
+					<h5>Status: <strong class="status">{{this.status}}</strong></h5>
+					<h3>Result: <strong class="result">{{this.result}}</strong></h3>
+				</div>
+				<div class="col-sm-2">
+					<h5>Progress:</h5>
+					<div class="progress">
+					  <div class="progress-bar" role="progressbar" aria-valuenow="{{this.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{this.progress}}%"></div>
+					</div>
+					<h6 class="percents">{{this.progress}}%</h6>	
+					<h5>Server:</h5>
+					<h6 class="server">{{this.server}}</h6>
+				</div>
+			</div>
+		{{/each}}
+	{{else}}
+		<h2>History is empty</h2>
+	{{/if}}
+{{else}}
+	<h1>Hello</h1>
+	<p>You must be logged in to use our application</p>
+	<a class="btn btn-primary" href="/user/login"><h2>Log in</h2></a>
+{{/if}}

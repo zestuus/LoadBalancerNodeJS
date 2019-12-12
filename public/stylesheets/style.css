@@ -1,0 +1,70 @@
+.search {
+	border: 0;
+}
+#form-signin {
+	text-align: center;
+	margin-top: 100px;
+}
+.form-control {
+	margin: 3px;
+}
+footer {
+	height: 50px;
+}
+.center {
+	text-align: center;
+}
+.profile-card {
+	height: 250px;
+	margin: 10px 0;
+}
+.profile-card img {
+	max-height: 200px;
+	margin: 20px 0;
+}
+textarea.form-control {
+	resize: none;
+	height: 160px;
+}
+table {
+	margin: 5px;
+}
+td,
+th {
+	padding: 8px;
+}
+.date {
+	height: 27px;
+	overflow: hidden;
+}
+.remove-btn {
+	margin: 25px;
+}
+#vertical i {
+	line-height: 870px;
+	text-align: center;
+	color: #aaa;
+}
+#add-book {
+	text-decoration: none;
+}
+#vertical :hover {
+	color: #bbb;
+}
+.sale {
+	width: 55px;
+}
+label {
+	float: left;
+}
+span {
+	display: block;
+	overflow: hidden;
+	padding: 0 4px 0 6px;
+}
+.toggle-pages a {
+	width: 49%;
+}
+.shadow-sm {
+	padding: 10px 0;
+}

@@ -1,0 +1,42 @@
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6 col-md-6 col-md-offset-4 col-sm-offset-3">
+		<p></p>
+		<h1>Change profile info:</h1>
+		<form action="/user/change" method="post" id="change-info-form">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" value="{{email}}" name="email" class="form-control" required>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" value="{{name}}" name="name" class="form-control">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="adress">Adress</label>
+						<input type="text" id="adress" value="{{adress}}" name="adress" class="form-control">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="birth-date">Birth Date</label>
+						<input type="date" id="birth-date" value="{{birth_date}}" name="birth_date" class="form-control">
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label for="birth-date">Bio</label>
+						<textarea type="text" id="bio" name="bio" class="form-control">{{bio}}</textarea>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-success">Save changes</button>
+		</form>
+	</div>
+</div>
